@@ -22,5 +22,5 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-    console.log('connection established');
-    app.listen(process.env.PORT||3000);
+console.log('connection established');
+app.listen(process.env.PORT||3000);
